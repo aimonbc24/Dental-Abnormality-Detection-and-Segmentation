@@ -1,6 +1,6 @@
 # Filling the Gap in Dental Diagnostics: Tooth-wise Semantic Segmentation of X-Ray Radiographs with UNET-DinoV2
 ### A UNET-inspired architecture with [Meta's DINOV2](https://github.com/facebookresearch/dinov2) ViT
-**Author: Aimon Benfield-Chand** [aimonbc@cs.washington.edu](aimonbc@cs.washington.edu)
+**Author: Aimon Benfield-Chand** ([aimonbc@cs.washington.edu](aimonbc@cs.washington.edu))
 
 ### 1.0 Abstract
 Dental and oral diseases significantly impact global health, necessitating advancements in diagnostic technologies. This paper introduces a novel approach to dental abnormality detection using panoramic X-ray radiograph segmentation and mask generation. Leveraging the Tufts Dental Database, we develop a multi-step method that segments dental radiographs into individual tooth crops and subsequently fine-tunes a segmentation model to generate dental abnormality masks. Our approach integrates a UNET-inspired architecture with Meta's DinoV2 pretrained Vision Transformer (ViT) as the encoder, providing a balance between precise abnormality localization and robust feature extraction. We demonstrate the effectiveness of our method by comparing it against a baseline model, highlighting the qualitative and quantitative differences in abnormality detection.
