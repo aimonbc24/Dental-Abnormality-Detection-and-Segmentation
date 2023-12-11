@@ -37,7 +37,7 @@ U-NET architecture using Meta [DINOV2](https://arxiv.org/abs/2304.07193)
 * The best UNET and linear segmentation frameworks achieve comparable test accuracies of 89.9% and 89.5, respectively, and achieve similar results across other metrics.
 * While the UNET architecture does not exhibit a significant quantitative advantage over the linear decoder baseline, their qualitative performance differs greatly.
 
-![image](images/example-result.png)
+![image](images/example-.png)
 
 
 
