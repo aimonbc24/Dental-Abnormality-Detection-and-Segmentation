@@ -19,7 +19,7 @@ more accurate and efficient dental abnormality detection.
 
 * By segmenting the dental radiographs from the [Tufts Dental Database](https://www.kaggle.com/datasets/deepologylab/tufts-dental-database/data)into individual teeth crops and subsequently training a segmentation model, we generate dental abnormality masks for individual teeth crops [7].
 * This method combines tooth segmentation and abnormality detection, aiming to enhance the precision of abnormality localization while developing a model that learns an abstraction of the features defining a dental abnormality.
-  ![image](https://github.com/arunasrivastava/DentalAbnormalityDetection/assets/82174933/b0b58a14-2873-45e4-940c-6a5d60819f4c)
+  ![image](images/example-overlay.png)
 
 ## Architecture 
 U-NET architecture using Meta [DINOV2](https://arxiv.org/abs/2304.07193) 
@@ -29,7 +29,7 @@ U-NET architecture using Meta [DINOV2](https://arxiv.org/abs/2304.07193)
 * The Upsampling Network reshapes/up-samples the ViT output back to (98, 28)
 * The Decoder further up-samples the image using convolutions, transpose convolutions, and skip-connections from the encoder to produce a segmentation mask
   
-![image](https://github.com/arunasrivastava/DentalAbnormalityDetection/assets/82174933/c14eae69-38a6-4d81-acc4-71fe4833f1b4)
+![image](images/model-architecture.png)
 
 
 ## Results
@@ -37,7 +37,7 @@ U-NET architecture using Meta [DINOV2](https://arxiv.org/abs/2304.07193)
 * The best UNET and linear segmentation frameworks achieve comparable test accuracies of 89.9% and 89.5, respectively, and achieve similar results across other metrics.
 * While the UNET architecture does not exhibit a significant quantitative advantage over the linear decoder baseline, their qualitative performance differs greatly.
 
-![image](https://github.com/arunasrivastava/DentalAbnormalityDetection/assets/82174933/8cb26007-7f79-401a-ad82-49136ef64e2b)
+![image](images/example-result.png)
 
 
 
